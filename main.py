@@ -9,7 +9,8 @@ from telebot import types
 from config import token
 
 # Загружаем список интересных фактов
-#
+# если текстовый файл находится не в каталоге программы, то пишем полный путь к нему
+# "C:/Users/Александр/OneDrive/Рабочий стол/python/FreelanceTask2/freelanceTask3/firstText.txt" (использ.:'/'!)
 f = open('facts.txt', 'r', encoding='UTF-8')
 facts = f.read().split('\n')
 f.close()
